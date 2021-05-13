@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <SourceRevisionId>build$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</SourceRevisionId>
+    <Copyright>$([System.DateTime]::UtcNow.Year) Bluewalk</Copyright>
+    <Product>BlueHome</Product>
+    <Authors>Bluewalk</Authors>
+    <Description>BlueHome</Description>
+  </PropertyGroup>
+</Project>
