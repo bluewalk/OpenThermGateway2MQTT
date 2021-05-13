@@ -46,8 +46,10 @@ namespace Net.Bluewalk.OpenThermGateway2Mqtt
                 {
                     config.AddConfiguration(configuration);
                 })
-                .ConfigureServices((_, services) =>
+                .ConfigureServices((context, services) =>
                 {
+                    services.Configure<Config>(options => context.Configuration.GetSection("Config").Bind(options));
+
                     // Singletons
                     services.AddSingleton<OtgwClient>();
 
