@@ -6,6 +6,8 @@ namespace Net.Bluewalk.OpenThermGateway2Mqtt
         public int TcpPort { get; set; }
         public string MqttBroker { get; set; }
         public int MqttPort { get; set; }
+        public string MqttUsername { get; set; }
+        public string MqttPassword { get; set; }
         public string MqttPrefix { get; set; }
 
         public Config()

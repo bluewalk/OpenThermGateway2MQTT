@@ -17,7 +17,6 @@ namespace Net.Bluewalk.OpenThermGateway2Mqtt
             Console.WriteLine($"OpenThermGateway2MQTT version {version}");
             Console.WriteLine("https://github.com/bluewalk/OpenThermGateway2MQTT\n");
 
-
             #region Configuration
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true, true)
@@ -26,7 +25,6 @@ namespace Net.Bluewalk.OpenThermGateway2Mqtt
                 .AddEnvironmentVariables("OTGW_")
                 .Build();
             #endregion
-
 
             #region Serilog
             var outputTemplate =

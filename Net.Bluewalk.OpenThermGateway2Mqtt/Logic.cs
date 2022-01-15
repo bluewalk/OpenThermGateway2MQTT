@@ -140,6 +140,7 @@ namespace Net.Bluewalk.OpenThermGateway2Mqtt
                 .WithAutoReconnectDelay(TimeSpan.FromSeconds(15))
                 .WithClientOptions(new MqttClientOptionsBuilder()
                     .WithClientId($"OpenThermGatewat2Mqtt-{Environment.MachineName}")
+                    .WithCredentials(_config.MqttUsername, _config.MqttPassword)
                     .WithTcpServer(_config.MqttBroker, _config.MqttPort))
                 .Build();
 
